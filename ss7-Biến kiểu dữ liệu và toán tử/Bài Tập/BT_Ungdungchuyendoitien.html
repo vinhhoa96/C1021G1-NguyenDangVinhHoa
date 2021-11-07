@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th><p>Amount</p></th>
+        <th></th>
+        <th><p>From Currency</p></th>
+        <th></th>
+        <th><p>To Currency</p></th>
+    </tr>
+    <tr>
+        <td><input type="text" size="20" id="dauvao"></td>
+        <td width="15px"></td>
+        <td>  <select name="vn" id="select1"  style="size:20">
+            <option value="a">VietNam</option>
+            <option value="b">USD</option>
+        </select></td>
+        <td width="15px"></td>
+        <td>  <select name="usd" id="select2" style="size:20" >
+            <option value="a">VietNam</option>
+            <option value="b">USD</option>
+              </select>
+        </td>
+        <td width="15px"></td>
+        <td><button onclick="doitien()" >Convert</button></td>
+        <script>
+            function doitien() {
+                let giatrivao = document.getElementById('dauvao').value;
+                let select1 = document.getElementById('select1').value;
+                let select2 = document.getElementById('select2').value;
+                if(select1==select2){
+                    alert(giatrivao);
+                 }
+                if(select1 =="a" && select2=="b" ){
+                    alert(giatrivao/24000);
+                }
+                if(select1 =="b" && select2=="a" ){
+                    alert(giatrivao*24000);
+                }
+            }
+        </script>
+
+    </tr>
+</table>
+</body>
+</html>

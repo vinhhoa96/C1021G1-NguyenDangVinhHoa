@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TINHCUOCDIENTHOAI</title>
+</head>
+<body>
+<script>
+    var p;
+    p=prompt("Nhập tổng số phút đã gọi");
+    p=parseInt(p);
+    if(p<0){
+        alert("Nhập lại sai rồi");
+    }if(p>=0&&p<=50){
+        alert("Số tiền là:"+(25000+600*p));
+    }if(p>50&&p<=200){
+        alert("Số tiền là"+(25000+600*50+(p-50)*400));
+    }if(p>200){
+        alert("Số tiền là"+(25000+600*50+400*150+(p-200)*200));
+    }
+</script>
+</body>
+</html>

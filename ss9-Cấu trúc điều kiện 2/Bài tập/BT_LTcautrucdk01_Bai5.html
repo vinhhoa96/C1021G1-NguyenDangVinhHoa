@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a,b,c;
+    a=prompt("Nhập số điểm bài tập: ");
+    a=parseInt(a);
+    b=prompt("Nhập số điểm giữa kỳ: ");
+    b=parseInt(b);
+    c=prompt("Nhập số điểm cuối kỳ: ");
+    c=parseInt(c);
+    tb=(0.2*a+0.2*b+0.6*c);
+    if(tb>=9){
+        alert(" Loại A ");
+    }
+    else if (tb>=7){
+        alert(" Loại B");
+    }
+    else if (tb>=6) {
+        alert(" Loại C");
+    }
+    else if (tb>=4){
+        alert(" Loại D");
+    }
+    else{
+        alert ("Loại F");
+    }
+</script>
+</body>
+</html>

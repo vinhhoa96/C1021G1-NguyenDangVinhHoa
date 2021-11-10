@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BANGCUUCHUONG</title>
+</head>
+<body>
+<script language="javascript">
+    // let sout, i, j;
+    // sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    // i = 2;j = 1;
+    // while (i <= 9) {
+    //     sout = sout + "<tr>";
+    //     while (j <= 9) {
+    //         sout = sout + "<td>" + i+"x"+j+"="+(i*j) + "</td>";
+    //         j++;
+    //     }
+    //     sout = sout + "</tr>";
+    //     j = 1;
+    //     i++;
+    // }
+    // sout = sout + "</table>";
+    // document.write(sout);
+</script>
+<script>
+    let sout, i, j;
+    sout = "<table border='1' width='700' cellspacing='0' cellpadding='3'>";
+    i = 2;j = 1;
+    while (j <= 9) {
+        sout = sout + "<tr>";
+        while (i <= 9) {
+            sout = sout + "<td>" + i+"x"+j+"="+(i*j) + "</td>";
+            i++;
+        }
+        sout = sout + "</tr>";
+        i = 2;
+        j++;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" size="20" id="dauvao1" >
+<input type="text" size="20" id="dauvao2"><br>
+<button onclick="cong()" >Addition(+)</button>
+<button onclick="tru()" >Subtraction(-)</button>
+<button onclick="nhan()" >Multiplication(x)</button>
+<button onclick="chia()" >Division(/)</button>
+<script>
+    function cong() {
+        let a = document.getElementById('dauvao1').value;
+        let b = document.getElementById('dauvao2').value;
+        alert ((+a)+(+b));
+    }
+    function tru() {
+        let a = document.getElementById('dauvao1').value;
+        let b = document.getElementById('dauvao2').value;
+        alert(a-b);
+    }
+    function nhan() {
+        let a = document.getElementById('dauvao1').value;
+        let b = document.getElementById('dauvao2').value;
+        alert(a*b);
+    }
+    function chia() {
+        let a = document.getElementById('dauvao1').value;
+        let b = document.getElementById('dauvao2').value;
+        alert(a/b);
+    }
+</script>
+</body>
+</html>

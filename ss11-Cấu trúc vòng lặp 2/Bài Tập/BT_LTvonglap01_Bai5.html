@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = 0;
+    let num2 = 1;
+    let temp;
+    let total=0;
+    let result2 = num1 +"," + num2;
+    for (let i =0; i<20;i++){
+        temp = num1 + num2;
+        num1 = num2;
+        num2 = temp;
+        result2 += ", "+ num2;
+        total+=temp;
+    }
+    document.write("Dãy 20 số filonacci là:"+result2);
+    document.write("</br>");
+    document.write("Tổng 20 số filonacci là:"+total);
+</script>
+</body>
+</html>

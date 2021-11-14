@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result="" ;
+    let dem=0;
+    let a = [];
+    let n = parseInt(prompt("Vui long nhap so luong phan tu: "));
+
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhap phan tu " + i));
+    }
+    console.log(a);
+    for (let i = 0; i < n; i++){
+        if (a[i]>=10) {
+            result += +a[i]+",";
+            dem++;
+
+        }
+    }
+    console.log("Có "+dem+" lơn hơn hoặc bằng 10 trong mảng:");
+    console.log("Các số đó là:"+result);
+</script>
+</body>
+</html>

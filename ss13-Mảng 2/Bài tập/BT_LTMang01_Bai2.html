@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let max,dem;
+    let a = [];
+    let n = parseInt(prompt("Vui lòng nhập số phần tử: "));
+
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập giá trị phần tử " + i));
+    }
+    console.log(a);
+    max=a[0];
+    for (let i = 0; i < n; i++){
+        if (max>=a[i]) {
+            max = max;
+        }
+        else {max=a[i];
+        dem=i+1;
+        }
+    }
+    console.log("Phần tử có giá trị lớn nhất là: "+max);
+    console.log("Vị trí cửa phần tử đó là "+dem);
+</script>
+</body>
+</html>

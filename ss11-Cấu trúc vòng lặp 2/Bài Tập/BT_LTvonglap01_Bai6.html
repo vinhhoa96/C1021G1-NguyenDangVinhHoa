@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let total=0;
+    // let dem=0
+    // for (let i =7 ;i<10000;i++){
+    //     if(i%7==0&&dem<30){
+    //     total+=i;
+    //         dem++;
+    //         document.write(+i+" ");
+    //     }
+    // }
+    // document.write("</br>");
+    // document.write("Tổng 30 số chia hết 7 là:"+total);
+    let total=0;
+    let dem=1;
+    let result="";
+    for (let i =7; i<10000;i++){
+        if(i%7==0&&dem<30){
+           total+=i;
+           dem++;
+            result += ", "+ i;
+        }
+        }
+    document.write("30 số chia hết cho 7 là:"+result);
+    document.write("</br>");
+    document.write("Tổng 30 số chia hết 7 là:"+total);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b= [];
+    let c=[];
+    let n = parseInt(prompt("Vui lòng nhập số phần tử mảng a: "));
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập giá trị phần tử của mảng a " + i));
+    }
+    document.write("Mảng a:"+a);
+    document .write ("</br>");
+    let m = parseInt(prompt("Vui lòng nhập số phần tử mảng b: "));
+    for (let j = 0; j < m; j++) {
+        b[j] = parseInt(prompt("Nhập giá trị phần tử của mảng b " + j));
+    }
+    document.write("Mảng b:"+b);
+    document .write ("</br>");
+    c=a.concat(b);
+    document.write("Mảng c:"+c);
+</script>
+</body>
+</html>

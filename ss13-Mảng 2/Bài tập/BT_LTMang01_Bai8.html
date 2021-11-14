@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let n = parseInt(prompt("Vui lòng nhập số phần tử: "));
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập giá trị phần tử " + i));
+    }
+    document.write("Mảng trước:"+a);
+    document.write("</br>");
+    a.sort(function (a,b) {
+        return -a+b;});
+    document.write("Mảng sau khi sắp xếp: "+a);
+</script>
+</body>
+</html>

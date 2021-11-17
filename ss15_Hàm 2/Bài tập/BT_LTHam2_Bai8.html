@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swapArr(arr) {
+        return reserve(arr)
+    }
+    let a = [];b=[];
+    let n = parseInt(prompt("Vui lòng nhập số phần tử: "));
+
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập giá trị phần tử " + i));
+    }
+    document.write ("Mảng ban đâu:"+a);
+    b=a.reverse();
+    document.write ("Mảng đảo ngược: "+b);
+    document.write ("Mảng đảo ngược: "+swapArr(a));
+</script>
+
+</body>
+</html>

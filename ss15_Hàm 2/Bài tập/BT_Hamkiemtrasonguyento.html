@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrimeNumber(n) {
+        let count = 0;
+
+        for(let i = 1; i <= n; i++) {
+            if (n % i === 0) {
+                count++;
+            }
+        }
+
+        if (count === 2) {
+            return true;
+        }
+
+        return false;
+    }
+    let n = parseInt(prompt("Vui lòng nhập n: "));
+    let result="";
+    let number=1;
+    while(true) {
+
+        if(isPrimeNumber(number) === true) {
+            result += number + ",";
+        }
+
+        if (number >= n) {
+            break;
+        }
+
+        number++;
+    }
+
+    document.write("Dãy số nguyên tố nhỏ hơn "+n+ " là:"+result);
+</script>
+</body>
+</html>

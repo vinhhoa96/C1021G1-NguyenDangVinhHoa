@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Temperature = function (celsius) {
+
+        this.celsius = function () {
+            return ( (celsius*1.8000) + 32.00)
+        }
+        this.ToKenvin = function () {
+            return (celsius + 273.15 )
+
+        }
+
+    }
+    function main(){
+        var   rec1 = new Temperature(25);
+        var   main2  = rec1.celsius();
+        var   main3 =rec1.ToKenvin();
+        alert(" DO F LA " + main2 + " DO KEN LA " + main3);
+    }
+</script>
+<button type="button" onclick="main()"> CHUYEN DOI </button>
+
+</body>
+</html>

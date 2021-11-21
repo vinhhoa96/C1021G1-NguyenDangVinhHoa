@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Rectangle = function (width, height ) {
+
+        this.getArea = function(){
+            return width * height;
+        }
+        this.getAreas = function(){
+            return (height +  height)+(width + width);
+        }
+        this.getAreass = function() {
+            for (i=1 ; i <= height ;i++){
+                for (j=1 ;j <= width ;j++){
+
+                }
+                document.write("<br/>");
+            }
+        }
+        this.display = function () {
+            console.log("width = " + width + "; height =  " + height);
+            console.log("Area: " + this.getArea());
+            console.log("chu vi la:" + this.getAreas());
+
+        }
+    }
+
+    function main() {
+
+        //tao doi tuong hinh chu nhat co width = 2, height = 5
+        var rec1 = new Rectangle(5, 10);
+        console.log("tinh dien tich : ");
+        rec1.display();
+    }
+    main();
+
+
+</script>
+</body>
+</html>
